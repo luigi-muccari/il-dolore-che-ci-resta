@@ -1,0 +1,87 @@
+* {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+
+[id] {
+    scroll-margin-top: 150px;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(59, 38, 38, 0.742);
+}
+
+.title,
+.sub-title-main,
+.sub-title,
+.text {
+    color: aliceblue;
+    text-shadow: 8px 1px 8px rgba(14, 17, 34, 0.93);
+}
+
+.sub-title-main,
+.sub-title,
+.text {
+    font-family: "Libertinus Math", system-ui;
+}
+
+.title,
+.sub-title-main {
+    text-align: center;
+}
+
+.title {
+    font-size: 90px;
+    margin-top: 200px;
+
+    font-family: "Momo Signature", cursive;
+    font-weight: 10;
+}
+
+.sub-title-main,
+.sub-title {
+    font-size: 40px;
+}
+
+.sub-title,
+.text {
+    margin-left: 25px;
+}
+
+.text{
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 780px) {
+    .content {
+        height: 100%;
+    }
+
+    .title {
+        font-size: 50px;
+    }
+
+    .sub-title-main, .sub-title {
+        font-size: 30px;
+    }
+
+    .text{
+        font-size: 20px;
+    }
+}

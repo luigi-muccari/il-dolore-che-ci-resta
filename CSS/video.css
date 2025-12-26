@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+}
+
+.video {
+    position: absolute;
+    object-fit: cover;
+    position: fixed;
+
+    top: -150px;
+
+    height: 100vw;
+    width: 100vw;
+
+    z-index: -1;
+}
+
+@media screen and (max-width: 1010px) {
+    .video {
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .video {
+        height: 100%;
+    }
+}
