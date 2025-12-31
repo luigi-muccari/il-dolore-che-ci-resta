@@ -23,7 +23,7 @@ header {
     align-items: center;
 
     width: 80%;
-    background-color: rgba(240, 248, 255, 0.517);
+    background-color: rgba(240, 248, 255, 0.667);
     padding: 10px;
     border-radius: 25px;
 }
@@ -40,6 +40,7 @@ header {
     gap: 40px;
 
     font-family: "Libertinus Math", system-ui;
+    font-weight: bold;
 
     overflow-x: auto;
     white-space: nowrap;
@@ -55,6 +56,7 @@ header {
 .ancore:hover{
     scrollbar-width: thin;
     scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+    scroll-padding-top: 10px;
 }
 
 .ancore::-webkit-scrollbar {
@@ -64,4 +66,8 @@ header {
 a {
     color: black;
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
