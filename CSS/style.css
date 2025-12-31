@@ -61,9 +61,10 @@ body {
 .sub-title,
 .text {
     margin-left: 25px;
+    margin-right: 25px;
 }
 
-.text{
+.text {
     font-size: 25px;
     margin-bottom: 40px;
 }
@@ -77,11 +78,12 @@ body {
         font-size: 50px;
     }
 
-    .sub-title-main, .sub-title {
+    .sub-title-main,
+    .sub-title {
         font-size: 30px;
     }
 
-    .text{
+    .text {
         font-size: 20px;
     }
 }

@@ -1,0 +1,43 @@
+footer {
+    display: flex;
+    position: relative;
+    z-index: 10;
+    background-color: rgb(59, 38, 38);
+    color: aliceblue;
+    font-family: "Inter", sans-serif;
+    padding: 20px 20px;
+    width: 100%;
+    height: auto;
+    max-height: 70px;
+
+    box-shadow: 8px 1px 8px rgba(14, 17, 34, 0.93);;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo {
+    height: 25px;
+}
+
+.description {
+    display: flex;
+    position: relative;
+    align-items: center;
+    font-family: "Libertinus Math", system-ui;
+    gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .foot-row p {
+        text-align: center;
+    }
+
+    .foot-row {
+        height: 80px;
+    }
+
+    .me{
+        font-size: 13px;
+    }
+}
