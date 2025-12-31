@@ -33,41 +33,63 @@ header {
     height: auto;
 
     margin-right: 20px;
+
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
 }
 
 .ancore {
     display: flex;
     gap: 40px;
-
     font-family: "Libertinus Math", system-ui;
     font-weight: bold;
-
     overflow-x: auto;
     white-space: nowrap;
     scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
+
+    scrollbar-color: transparent transparent; 
+    transition: scrollbar-color 0.3s ease-in-out;
 }
 
-.ancore {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-.ancore:hover{
-    scrollbar-width: thin;
-    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
-    scroll-padding-top: 10px;
-}
-
+/* Per Chrome, Safari, Edge */
 .ancore::-webkit-scrollbar {
-    display: none;
+    height: 6px; 
+    display: block; 
+}
+
+.ancore::-webkit-scrollbar-track {
+    background: transparent;
+    margin-left: 20px; /* Distacco a sinistra per scorrimento orizzontale */
+    margin-right: 20px;
+}
+
+.ancore::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Effetto al passaggio del mouse */
+.ancore:hover {
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent; /* Per Firefox */
+}
+
+.ancore:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2); /* Per Chrome/Safari */
 }
 
 a {
     color: black;
     text-decoration: none;
+
+    transition: font-size 0.3s ease-in-out;
 }
 
 a:hover {
     text-decoration: underline;
+    font-size: 1.05em;
 }
