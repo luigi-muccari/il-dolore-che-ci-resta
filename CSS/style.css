@@ -5,6 +5,8 @@
     margin-bottom: 0;
     padding: 0;
     box-sizing: border-box;
+
+    cursor: url('/Img/icon/Cursor.png'), auto;
 }
 
 html,
@@ -13,6 +15,10 @@ body {
     display: flex;
     flex-direction: column;
     scroll-behavior: smooth;
+}
+
+a, button, input[type="submit"], input[type="button"], [role="button"], select {
+    cursor: url('/Img/icon/pointer.png'), pointer;
 }
 
 [id] {

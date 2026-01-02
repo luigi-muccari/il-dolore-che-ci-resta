@@ -20,6 +20,8 @@ footer {
     height: 52px;
 
     transition: transform 0.3s ease-in-out;
+
+    cursor: url('/Img/icon/pointer.png'), pointer;
 }
 
 .footer-logo:hover {

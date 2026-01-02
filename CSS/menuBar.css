@@ -35,6 +35,8 @@ header {
     margin-right: 20px;
 
     transition: transform 0.3s ease-in-out;
+
+    cursor: url('/Img/icon/pointer.png'), pointer;
 }
 
 .icon:hover {
@@ -58,12 +60,12 @@ header {
 /* Per Chrome, Safari, Edge */
 .ancore::-webkit-scrollbar {
     height: 6px; 
-    display: block; 
+    display: block;
 }
 
 .ancore::-webkit-scrollbar-track {
     background: transparent;
-    margin-left: 20px; /* Distacco a sinistra per scorrimento orizzontale */
+    margin-left: 20px; 
     margin-right: 20px;
 }
 
